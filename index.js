@@ -24,7 +24,6 @@ fs.readdir(listenersDir, (err, files) => {
 
 client.on('message', message => {
     var commandsDir = './commands'
-    
     if(message.content.indexOf(PREFIX) !== 0) return;
     
     const args = message.content.slice(PREFIX.length).trim().split(/ +/g);
@@ -36,7 +35,6 @@ client.on('message', message => {
     } catch (e) {
       message.channel.send('`I don\'t have that command in my system~`')  
     }
-    
 })
 
 client.login(DISCORD_TOKEN).then(() => console.log("Connected!"))
