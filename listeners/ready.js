@@ -1,5 +1,5 @@
 exports.run = (client) => {
-    return "Connected!"
+    console.log('Connected!')
     setPlaying(client, 'Despacito 2', 'LISTENING')
 }
 
