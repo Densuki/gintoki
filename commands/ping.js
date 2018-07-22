@@ -1,3 +1,4 @@
 exports.run = (client, message, args) => {
-    message.channel.send("Test!").catch(console.error);
+    var ping = client.ping
+    message.channel.send(ping).catch(console.error);
 }
